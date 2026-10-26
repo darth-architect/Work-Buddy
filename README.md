@@ -1,6 +1,6 @@
-# Work Buddy (Slack-Bot)
+# Work Buddy
 
-A multi-domain Slack bot that lets employees handle IT and sales tasks from one conversation — account unlocks, lead/quota lookups, full user onboarding — instead of juggling separate consoles.
+A multi-domain Slack bot that lets employees handle IT and sales tasks from one conversation — account unlocks, password resets, DL management, app access provisioning, Salesforce lead/quota lookups, and full user onboarding — instead of juggling separate consoles.
 
 See [`docs/one-pager.md`](docs/one-pager.md) for the business summary, or [`architecture/architecture.md`](architecture/architecture.md) for how it's built.
 
@@ -15,13 +15,25 @@ See [`docs/one-pager.md`](docs/one-pager.md) for the business summary, or [`arch
 
 ```
 bot/            core agent + Slack integration code
-scripts/        one-off/maintenance scripts (Slack channel cleanup, id lookup, MCP connectivity checks)
+scripts/        maintenance scripts (Slack channel cleanup, id lookup, MCP connectivity checks)
 docs/           the one-pager sent to partners
-usecases/       one doc per capability — problem, workflow, architecture, tech stack
 architecture/   overall system architecture
-demo_videos/    recorded walkthroughs of each use case
-screenshots/    supporting screenshots
+workflows/      one folder per capability — usecase doc, demo video, screenshots
+screenshots/    general app screenshots not tied to one workflow
 ```
+
+## Workflows
+
+| Workflow | Status | Folder |
+|---|---|---|
+| Okta account unlock | shipped (OTP-based; see note in its usecase doc) | [`workflows/account-unlock`](workflows/account-unlock) |
+| Salesforce lead & quota lookup | shipped | [`workflows/salesforce-lead-quota-lookup`](workflows/salesforce-lead-quota-lookup) |
+| Full user onboarding | shipped | [`workflows/user-onboarding`](workflows/user-onboarding) |
+| Password reset | design doc only | [`workflows/password-reset`](workflows/password-reset) |
+| DL management | design doc only | [`workflows/dl-management`](workflows/dl-management) |
+| Application access provisioning (Okta) | design doc only | [`workflows/application-access-provisioning-okta`](workflows/application-access-provisioning-okta) |
+
+Each workflow folder holds a `usecase.md` (problem, solution, workflow, architecture, tech stack), and a `demo_video.mp4` + `screenshots/` where recorded.
 
 ## Running it locally
 
@@ -41,6 +53,6 @@ python scripts/clearup_slack.py   # wipes the bot's own messages
 python scripts/cleanup_slack.py   # wipes your own messages (needs SLACK_USER_TOKEN)
 ```
 
-## Related
+## History
 
-[`IAM-Automation-Workflow`](https://github.com/darth-architect/IAM-Automation-Workflow) holds earlier, Okta-focused identity-automation design docs. The account-unlock flow actually shipped here uses OTP verification via Okta + Slack rather than the security-question design sketched there — see `usecases/account-unlock.md` in this repo for what's actually running.
+This repo merges the full commit history of two earlier repos: `IAM-Automation-Workflow` (the original identity-automation design docs) and `Slack-Bot` (the actual agent build). Both remain on disk at `~/Documents/IAM-Automation-Workflow` and `~/Documents/Slack-Bot` for reference; this repo supersedes them going forward.

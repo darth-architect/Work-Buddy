@@ -1,3 +1,5 @@
+> **Note:** this doc describes the original security-question-based design. What actually shipped (see `demo_video.mp4` in this folder) verifies identity with an OTP sent via Okta and confirmed in Slack, not security questions, and the bot is the Work Buddy Slack bot (LangGraph + MCP) rather than the Teams/Aisera chatbot referenced below. Kept as-is for the original design rationale; worth reconciling the two at some point.
+
 # Account Unlock Automation (Proactive + Security Question-Based | Okta)
 
 ## Overview
