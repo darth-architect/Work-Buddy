@@ -144,6 +144,8 @@ POST /api/v1/apps/{appId}/users
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 User → Chatbot → Request Validation → Approval Engine → Okta API → Application Assignment
 
 ---

@@ -249,6 +249,8 @@ POST /groups/{group-id}/members/$ref
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 User → Chatbot → Validation Layer → Approval Engine → Microsoft Graph API → Azure Entra ID
 
 ---

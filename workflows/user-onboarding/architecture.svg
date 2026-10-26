@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9333ea"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="560" fill="#ffffff"/>
+
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">User Onboarding — Architecture</text>
+  <text x="40" y="68" font-size="13" fill="#64748b">Slack · LangGraph agent · JSM ticket + manager approval · Azure AD + Okta provisioning</text>
+
+  <rect x="20" y="220" width="150" height="90" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+  <text x="95.0" y="252.0" font-size="15" fill="#0c4a6e" text-anchor="middle" font-weight="700">Slack</text>
+  <text x="95.0" y="269.0" font-size="10.5" fill="#0c4a6e" text-anchor="middle">new-hire</text>
+  <text x="95.0" y="286.0" font-size="10.5" fill="#0c4a6e" text-anchor="middle">request</text>
+  <rect x="195" y="220" width="200" height="90" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="295.0" y="260.5" font-size="13" fill="#581c87" text-anchor="middle" font-weight="700">LangGraph Agent</text>
+  <text x="295.0" y="277.5" font-size="10" fill="#581c87" text-anchor="middle">Tier 1 — ticket required</text>
+  <rect x="420" y="220" width="170" height="90" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="505.0" y="260.5" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700">MCP · JSM</text>
+  <text x="505.0" y="277.5" font-size="10.5" fill="#14532d" text-anchor="middle">ticket created</text>
+  <rect x="615" y="190" width="200" height="150" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="715.0" y="252.0" font-size="13" fill="#92400e" text-anchor="middle" font-weight="700">Manager Approval</text>
+  <text x="715.0" y="269.0" font-size="10.5" fill="#92400e" text-anchor="middle">Approve / Decline</text>
+  <text x="715.0" y="286.0" font-size="10.5" fill="#92400e" text-anchor="middle">card posted in Slack</text>
+  <rect x="840" y="150" width="150" height="70" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="915.0" y="180.5" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700">Azure AD</text>
+  <text x="915.0" y="197.5" font-size="10" fill="#14532d" text-anchor="middle">user created</text>
+  <rect x="840" y="240" width="150" height="70" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="915.0" y="270.5" font-size="13" fill="#14532d" text-anchor="middle" font-weight="700">Okta</text>
+  <text x="915.0" y="287.5" font-size="10" fill="#14532d" text-anchor="middle">apps assigned</text>
+  <rect x="1010" y="195" width="150" height="150" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+  <text x="1085.0" y="240.0" font-size="13" fill="#0c4a6e" text-anchor="middle" font-weight="700">Outcomes</text>
+  <text x="1085.0" y="257.0" font-size="10" fill="#0c4a6e" text-anchor="middle">welcome email</text>
+  <text x="1085.0" y="274.0" font-size="10" fill="#0c4a6e" text-anchor="middle">with credentials</text>
+  <text x="1085.0" y="291.0" font-size="10" fill="#0c4a6e" text-anchor="middle">+ ticket resolved</text>
+  <text x="1085.0" y="308.0" font-size="10" fill="#0c4a6e" text-anchor="middle">in Jira</text>
+  <line x1="170" y1="265" x2="193" y2="265" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="395" y1="265" x2="418" y2="265" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="590" y1="265" x2="613" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="815" y1="240" x2="838" y2="198" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <line x1="815" y1="290" x2="838" y2="278" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <line x1="990" y1="190" x2="1008" y2="240" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="990" y1="285" x2="1008" y2="265" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <text x="40" y="350" font-size="13" font-weight="700" fill="#0f172a">Tier 1 — ticket and approval before any account exists</text>
+  <text x="40" y="372" font-size="12" fill="#334155">The agent opens a JSM ticket the moment the request is confirmed, and nothing is provisioned</text>
+  <text x="40" y="392" font-size="12" fill="#334155">until the manager approves the card posted back in Slack.</text>
+  <text x="40" y="436" font-size="13" font-weight="700" fill="#0f172a">One approval, two systems, then the new hire is emailed</text>
+  <text x="40" y="458" font-size="12" fill="#334155">On approval the agent provisions both Azure AD and Okta, sends the new hire a welcome email</text>
+  <text x="40" y="478" font-size="12" fill="#334155">with their login credentials, and the JSM ticket is marked resolved — a full audit trail by default.</text>
+
+  <!-- Footer -->
+  <line x1="40" y1="508" x2="1140" y2="508" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="530" font-size="11" fill="#94a3b8">Work Buddy · workflows/user-onboarding/architecture.svg</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 560" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9333ea"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="560" fill="#ffffff"/>
+
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#0f172a">Account Unlock — Architecture (as shipped)</text>
+  <text x="40" y="68" font-size="13" fill="#64748b">Slack · LangGraph agent · Okta Verify / security question / phone OTP · Okta unlock API</text>
+
+  <rect x="40" y="150" width="170" height="90" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+  <text x="125.0" y="182.0" font-size="16" fill="#0c4a6e" text-anchor="middle" font-weight="700">Slack</text>
+  <text x="125.0" y="199.0" font-size="10.5" fill="#0c4a6e" text-anchor="middle">“help me unlock</text>
+  <text x="125.0" y="216.0" font-size="10.5" fill="#0c4a6e" text-anchor="middle">my OKTA account”</text>
+  <rect x="250" y="150" width="230" height="90" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
+  <text x="365.0" y="190.5" font-size="14" fill="#581c87" text-anchor="middle" font-weight="700">LangGraph Agent</text>
+  <text x="365.0" y="207.5" font-size="11" fill="#581c87" text-anchor="middle">Work Buddy (Tier 2)</text>
+  <rect x="520" y="100" width="240" height="190" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="640.0" y="156.5" font-size="13" fill="#92400e" text-anchor="middle" font-weight="700">Identity Verification</text>
+  <text x="640.0" y="173.5" font-size="10.5" fill="#92400e" text-anchor="middle">Okta Verify push or TOTP,</text>
+  <text x="640.0" y="190.5" font-size="10.5" fill="#92400e" text-anchor="middle">security question, or phone</text>
+  <text x="640.0" y="207.5" font-size="10.5" fill="#92400e" text-anchor="middle">OTP -- requestor's choice</text>
+  <text x="640.0" y="224.5" font-size="10.5" fill="#92400e" text-anchor="middle">submitted via an n8n</text>
+  <text x="640.0" y="241.5" font-size="10.5" fill="#92400e" text-anchor="middle">approval-form webhook</text>
+  <rect x="800" y="150" width="160" height="90" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="880.0" y="190.5" font-size="15" fill="#14532d" text-anchor="middle" font-weight="700">Okta API</text>
+  <text x="880.0" y="207.5" font-size="10.5" fill="#14532d" text-anchor="middle" font-family="monospace">lifecycle/unlock</text>
+  <rect x="1000" y="150" width="140" height="90" rx="12" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+  <text x="1070.0" y="190.5" font-size="14" fill="#0c4a6e" text-anchor="middle" font-weight="700">Slack reply</text>
+  <text x="1070.0" y="207.5" font-size="11" fill="#0c4a6e" text-anchor="middle">unlock confirmed</text>
+  <line x1="210" y1="195" x2="248" y2="195" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="195" x2="518" y2="195" stroke="#9333ea" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <line x1="760" y1="195" x2="798" y2="195" stroke="#d97706" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <line x1="960" y1="195" x2="998" y2="195" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <text x="40" y="350" font-size="13" font-weight="700" fill="#0f172a">Tier 2 action — but still identity-gated</text>
+  <text x="40" y="372" font-size="12" fill="#334155">Unlocking is instant once verified, no ticket or manager approval needed — but the agent</text>
+  <text x="40" y="392" font-size="12" fill="#334155">still requires live verification first: Okta Verify push/TOTP, a security question, or a phone OTP.</text>
+  <text x="40" y="436" font-size="13" font-weight="700" fill="#0f172a">Differs from the original design doc</text>
+  <text x="40" y="458" font-size="12" fill="#334155">The pre-Work Buddy design (see usecase.md) specified security questions and a Teams/Aisera</text>
+  <text x="40" y="478" font-size="12" fill="#334155">chatbot. What shipped offers a choice of verification methods through the Work Buddy Slack bot.</text>
+
+  <!-- Footer -->
+  <line x1="40" y1="508" x2="1140" y2="508" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="530" font-size="11" fill="#94a3b8">Work Buddy · workflows/account-unlock/architecture.svg</text>
+</svg>

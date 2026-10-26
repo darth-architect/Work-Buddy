@@ -91,6 +91,8 @@ An AI-driven chatbot automates the password reset process by:
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 User → Chatbot → Identity Verification → OTP Service (Twilio) → Automation API → Microsoft Graph → Azure AD
 
 ---

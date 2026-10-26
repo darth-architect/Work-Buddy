@@ -46,6 +46,8 @@ Work Buddy collects the onboarding request conversationally, opens a Jira Servic
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 Slack → LangGraph agent → MCP (JSM tool server) → ticket created → manager approval → MCP (Okta/Azure AD tool servers) → provisioning → Slack confirmation
 
 ## Technology Stack

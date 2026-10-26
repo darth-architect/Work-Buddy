@@ -116,6 +116,8 @@ A proactive, AI-driven solution that:
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 User ← Proactive Notification System ← Okta Event Hook
 ↓
 Chatbot → Identity Verification → Okta API → Okta Directory

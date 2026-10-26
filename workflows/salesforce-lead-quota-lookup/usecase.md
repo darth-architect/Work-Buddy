@@ -48,6 +48,8 @@ Work Buddy exposes Salesforce as an MCP tool server. The agent:
 
 ## Architecture
 
+![Architecture](architecture.svg)
+
 Slack → LangGraph agent → MCP (Salesforce tool server) → Salesforce REST/SOQL API → back to agent → Slack reply
 
 ## Technology Stack
