@@ -1,5 +1,7 @@
 # Architecture
 
+![System architecture](system-architecture.svg)
+
 ## Overview
 
 Work Buddy is a single LangGraph agent, fronted by Slack, that reasons over a small set of MCP tool servers instead of hard-coded integrations per system. The agent doesn't know or care where a tool is hosted — it only knows the tool's name, description, and schema, all discovered over MCP at startup.
